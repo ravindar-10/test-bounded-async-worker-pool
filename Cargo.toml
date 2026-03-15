@@ -1,0 +1,22 @@
+[package]
+name="bounded-async-worker-pool"
+version="0.1.0"
+edition="2021"
+authors = ["<Ravindar Singh>"]
+license="MIT"
+description= "A bounded asynchronous worker pool with backpressure and graceful shutdown"
+
+[dependencies]
+tokio={ version = "1.0", features = ["full"] }
+futures = "0.3"
+
+[dev-dependencies]
+tokio-test="0.4"
+
+[lib]
+name="bounded_async_worker_pool"
+path="src/lib.rs"
+
+[[example]]
+name= "demo"
+path="examples/demo.rs"

@@ -80,3 +80,9 @@ A link to the pull request can be submitted once it is ready for review.
 * Metrics for active, queued, and completed jobs
 * GitHub Actions to run formatting, tests, and clippy checks on each push
 * Pre-commit hooks to enforce formatting and linting
+
+**Quick Verifiaction:**
+```bash
+  cargo test
+  cargo run --example demo
+```
